@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Titanic Exploratory Data Analysis &amp; Data Cleaning | Om Prakash Jena</title>
+  <meta name="description" content="Technical study of Titanic Exploratory Data Analysis &amp; Data Cleaning by Om Prakash Jena: Forensic data audit, missingness heatmaps, and demographic survival analysis." />
+  <meta name="author" content="Om Prakash Jena" />
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030B1D'/><text x='50' y='68' font-family='Georgia,serif' font-size='55' font-weight='bold' fill='%23e7dcce' text-anchor='middle'>OJ</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../projects.css" />
+</head>
+<body id="top">
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="page-container header-inner">
+      <a href="../projects.html" class="brand-block" title="Back to All Projects">
+        <span class="brand-monogram">OJ</span>
+        <div class="brand-text">
+          <span class="brand-name">OM PRAKASH JENA</span>
+          <span class="brand-sub">TECHNICAL CASE STUDY &bull; PROJECT 07</span>
+        </div>
+      </a>
+
+      <nav aria-label="Breadcrumb Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="../projects.html" class="btn-back-home" title="Back to Projects Showcase">
+              <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>ALL PROJECTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html" class="btn-back-home" style="border-color: var(--border-gold-light);" title="Back to Main Portfolio">
+              <span>MAIN PORTFOLIO</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- HERO HEADER -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="../index.html">PORTFOLIO</a> &bull;
+        <a href="../projects.html">PROJECTS</a> &bull;
+        <span>DATA ANALYTICS</span>
+      </div>
+
+      <h1 class="detail-title">TITANIC EXPLORATORY DATA ANALYSIS &amp; DATA CLEANING</h1>
+      <p class="detail-subtitle">
+        Audited passenger data, investigated missing-value distributions, and visualized demographic and socioeconomic relationships with survival rates.
+      </p>
+
+      <!-- Metadata Panel -->
+      <div class="detail-meta-panel">
+        <div class="meta-block">
+          <span class="meta-block-label">Category</span>
+          <span class="meta-block-value">Data Cleaning &amp; Preprocessing</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Core Tools</span>
+          <span class="meta-block-value">Python &bull; Pandas &bull; Seaborn</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Methodology Focus</span>
+          <span class="meta-block-value">Missingness Audit &amp; Stratification</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Source Code</span>
+          <span class="meta-block-value"><a href="https://github.com/Omprakash30760/Titanic-Exploratory-Data-Analysis" target="_blank" rel="noopener noreferrer" style="color: var(--text-gold); text-decoration: underline;">GitHub Repository &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Architectural SVG Stage -->
+      <div class="detail-visual-stage">
+        <svg viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="detGrad7" cx="50%" cy="40%" r="70%">
+              <stop offset="0%" stop-color="#191325" />
+              <stop offset="70%" stop-color="#0a0710" />
+              <stop offset="100%" stop-color="#030205" />
+            </radialGradient>
+          </defs>
+          <rect width="900" height="500" fill="url(#detGrad7)" />
+
+          <!-- Delicate Grid -->
+          <g stroke="rgba(203, 180, 147, 0.08)" stroke-width="0.8">
+            <line x1="80" y1="50" x2="80" y2="430" />
+            <line x1="80" y1="430" x2="820" y2="430" />
+            <line x1="80" y1="240" x2="820" y2="240" stroke-dasharray="4,4" />
+          </g>
+
+          <!-- Missing Value Heatmap & Survival Rate Decomposition -->
+          <g transform="translate(100, 90)">
+            <!-- Left Matrix: Missing Value Heatmap -->
+            <g transform="translate(0, 0)">
+              <rect x="0" y="0" width="320" height="260" rx="6" fill="#08050e" stroke="rgba(203, 180, 147, 0.3)" stroke-width="1.2" />
+              <rect x="0" y="0" width="320" height="32" rx="6" fill="#140d24" />
+              <text x="160" y="21" fill="#e7dcce" font-family="'Cinzel', serif" font-size="10" font-weight="700" text-anchor="middle">MISSINGNESS HEATMAP AUDIT</text>
+              <!-- Rows representation -->
+              <text x="25" y="65" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">Age Feature (19.8% Missing)</text>
+              <rect x="25" y="75" width="270" height="14" rx="2" fill="rgba(203, 180, 147, 0.15)" />
+              <rect x="25" y="75" width="216" height="14" rx="2" fill="#cbb493" opacity="0.85" />
+
+              <text x="25" y="120" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">Cabin Feature (77.1% Missing)</text>
+              <rect x="25" y="130" width="270" height="14" rx="2" fill="rgba(203, 180, 147, 0.15)" />
+              <rect x="25" y="130" width="62" height="14" rx="2" fill="#cbb493" opacity="0.85" />
+
+              <text x="25" y="175" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">Embarked Port (0.22% Missing)</text>
+              <rect x="25" y="185" width="270" height="14" rx="2" fill="rgba(203, 180, 147, 0.15)" />
+              <rect x="25" y="185" width="268" height="14" rx="2" fill="#cbb493" opacity="0.85" />
+
+              <text x="25" y="235" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700">Audit Status: Zero Missingness After Preprocessing</text>
+            </g>
+
+            <!-- Right Matrix: Demographic Survival Stratification -->
+            <g transform="translate(370, 0)">
+              <rect x="0" y="0" width="330" height="260" rx="6" fill="#08050e" stroke="rgba(203, 180, 147, 0.3)" stroke-width="1.2" />
+              <rect x="0" y="0" width="330" height="32" rx="6" fill="#140d24" />
+              <text x="165" y="21" fill="#e7dcce" font-family="'Cinzel', serif" font-size="10" font-weight="700" text-anchor="middle">DEMOGRAPHIC SURVIVAL CORRELATION</text>
+              <!-- Female 1st Class -->
+              <text x="25" y="65" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">Female &bull; 1st Class: 96.8% Survival</text>
+              <rect x="25" y="75" width="280" height="16" rx="3" fill="#cbb493" opacity="0.9" />
+
+              <!-- Female 2nd Class -->
+              <text x="25" y="115" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">Female &bull; 2nd Class: 92.1% Survival</text>
+              <rect x="25" y="125" width="280" height="16" rx="3" fill="rgba(203, 180, 147, 0.15)" />
+              <rect x="25" y="125" width="258" height="16" rx="3" fill="#cbb493" opacity="0.8" />
+
+              <!-- Male 1st Class -->
+              <text x="25" y="165" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">Male &bull; 1st Class: 36.9% Survival</text>
+              <rect x="25" y="175" width="280" height="16" rx="3" fill="rgba(203, 180, 147, 0.15)" />
+              <rect x="25" y="175" width="103" height="16" rx="3" fill="#cbb493" opacity="0.6" />
+
+              <!-- Male 3rd Class -->
+              <text x="25" y="215" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">Male &bull; 3rd Class: 13.5% Survival</text>
+              <rect x="25" y="225" width="280" height="16" rx="3" fill="rgba(203, 180, 147, 0.15)" />
+              <rect x="25" y="225" width="38" height="16" rx="3" fill="#cbb493" opacity="0.4" />
+            </g>
+          </g>
+
+          <text x="450" y="45" fill="#e7dcce" font-family="'Cinzel', serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.5">DATA QUALITY AUDIT &amp; DEMOGRAPHIC SURVIVAL CORRELATION</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTIONS -->
+    <div class="detail-split-grid">
+
+      <!-- Left Column -->
+      <div class="detail-main-col">
+        <h2>1. PROJECT OVERVIEW</h2>
+        <p class="detail-paragraph">
+          The Titanic Exploratory Data Analysis &amp; Data Cleaning project is an exhaustive forensic investigation into raw tabular data hygiene, missing-value imputation strategies, and demographic survival correlations. By focusing squarely on data quality before any machine learning modeling is attempted, this study demonstrates how foundational data wrangling dictates analytical integrity.
+        </p>
+
+        <h2>2. PROBLEM STATEMENT</h2>
+        <p class="detail-paragraph">
+          Real-world data is inherently imperfect. The raw Titanic passenger manifest suffers from substantial missingness: approximately 20% of passenger ages are absent, over 77% of cabin assignments are unrecorded, and categorical fields have missing ports of embarkation. Applying crude blanket imputations (like replacing all missing ages with the dataset mean) introduces statistical bias and corrupts downstream modeling.
+        </p>
+
+        <h2>3. PROJECT OBJECTIVES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Systematic Missingness Audit</strong>
+              <span>Quantify missing values across every attribute and generate missingness heatmaps to ascertain whether data is Missing Completely at Random (MCAR) or Missing at Random (MAR).</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Stratified Feature Imputation</strong>
+              <span>Extract social titles (Master, Miss, Mr, Mrs, Dr) from passenger names to impute missing ages via stratified median calculations rather than a single global mean.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Exploratory Demographic Synthesis</strong>
+              <span>Examine multivariate correlations between passenger class, sex, fare paid, family size, and survival rates.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>4. KEY FEATURES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Name Title Extraction Engine</strong>
+              <span>Parsed regex strings from passenger names to cluster individuals into demographic categories, yielding highly accurate localized median age imputations.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Fare Outlier Treatment</strong>
+              <span>Identified heavily right-skewed ticket fares, evaluated logarithmic transformations, and winsorized extreme outliers to protect downstream models.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Socioeconomic Survival Disparities</strong>
+              <span>Quantified the profound survival gap: 1st class female passengers exhibited a 96.8% survival rate compared to 13.5% for 3rd class male passengers.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>5. IMPLEMENTATION DETAILS</h2>
+        <p class="detail-paragraph">
+          The pipeline was constructed in <strong>Python</strong> with <strong>Pandas</strong>, <strong>NumPy</strong>, <strong>Matplotlib</strong>, and <strong>Seaborn</strong>. String manipulation functions extracted passenger titles, cross-tabulations compared survival counts across categorical combinations, and pairplots mapped continuous variables against survival outcomes.
+        </p>
+
+        <h2>6. RESULTS &amp; LEARNINGS</h2>
+        <p class="detail-paragraph">
+          The project reinforced the principle that data preprocessing is the single most critical phase of applied data science. Key learnings included mastering stratified imputation techniques, handling high-cardinality missingness safely, and structuring reproducible exploratory data workflows.
+        </p>
+      </div>
+
+      <!-- Right Column -->
+      <aside class="detail-side-col">
+        <div class="detail-side-card">
+          <h3>TECHNOLOGY STACK</h3>
+          <div class="card-tech-wrap" style="margin-top: 1rem;">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Pandas</span>
+            <span class="tech-chip">NumPy</span>
+            <span class="tech-chip">Matplotlib</span>
+            <span class="tech-chip">Seaborn</span>
+            <span class="tech-chip">Data Cleaning</span>
+            <span class="tech-chip">Stratified Imputation</span>
+          </div>
+
+          <h3 style="margin-top: 2rem;">REPOSITORY ACCESS</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+            Data cleaning scripts and exploratory notebooks are available on GitHub:
+          </p>
+
+          <div class="detail-action-buttons">
+            <a href="https://github.com/Omprakash30760/Titanic-Exploratory-Data-Analysis" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <span>VIEW GITHUB REPO</span>
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; fill: none;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../projects.html#data-analytics" class="btn-secondary-action">
+              <span>&larr; BACK TO ALL PROJECTS</span>
+            </a>
+            <a href="../index.html" class="btn-secondary-action" style="border-color: var(--border-gold-light);">
+              <span>&larr; MAIN PORTFOLIO</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>OM PRAKASH JENA</h4>
+          <p>Software Developer | AI &amp; Data Science &bull; KL University</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="../projects.html">All Projects</a></li>
+          <li><a href="../index.html">Main Portfolio</a></li>
+          <li><a href="https://github.com/Omprakash30760" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/om-prakash-jena-443b74317/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#top" style="color: var(--text-gold);">Back To Top &uarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Om Prakash Jena. All Rights Reserved.</span>
+        <span>Titanic Exploratory Data Analysis &amp; Data Cleaning</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

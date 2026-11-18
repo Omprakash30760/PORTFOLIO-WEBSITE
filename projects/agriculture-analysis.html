@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Seasonal Agriculture Performance Analysis | Om Prakash Jena</title>
+  <meta name="description" content="Technical study of Seasonal Agriculture Performance Analysis by Om Prakash Jena: Multi-year climatic and agricultural crop yield data science project." />
+  <meta name="author" content="Om Prakash Jena" />
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030B1D'/><text x='50' y='68' font-family='Georgia,serif' font-size='55' font-weight='bold' fill='%23e7dcce' text-anchor='middle'>OJ</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../projects.css" />
+</head>
+<body id="top">
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="page-container header-inner">
+      <a href="../projects.html" class="brand-block" title="Back to All Projects">
+        <span class="brand-monogram">OJ</span>
+        <div class="brand-text">
+          <span class="brand-name">OM PRAKASH JENA</span>
+          <span class="brand-sub">TECHNICAL CASE STUDY &bull; PROJECT 03</span>
+        </div>
+      </a>
+
+      <nav aria-label="Breadcrumb Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="../projects.html" class="btn-back-home" title="Back to Projects Showcase">
+              <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>ALL PROJECTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html" class="btn-back-home" style="border-color: var(--border-gold-light);" title="Back to Main Portfolio">
+              <span>MAIN PORTFOLIO</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- HERO HEADER -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="../index.html">PORTFOLIO</a> &bull;
+        <a href="../projects.html">PROJECTS</a> &bull;
+        <span>DATA ANALYTICS</span>
+      </div>
+
+      <h1 class="detail-title">SEASONAL AGRICULTURE PERFORMANCE ANALYSIS</h1>
+      <p class="detail-subtitle">
+        Analyzed multi-year agricultural production and climatic datasets to evaluate seasonal crop performance, identify regional yield variations, and visualize weather-yield relationships.
+      </p>
+
+      <!-- Metadata Panel -->
+      <div class="detail-meta-panel">
+        <div class="meta-block">
+          <span class="meta-block-label">Category</span>
+          <span class="meta-block-value">Data Science &amp; Analytics</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Core Tools</span>
+          <span class="meta-block-value">Python &bull; Pandas &bull; Seaborn</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Dataset Scope</span>
+          <span class="meta-block-value">Multi-Year Climatic &amp; Yield</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Source Code</span>
+          <span class="meta-block-value"><a href="https://github.com/Omprakash30760/seasonal-agriculture-performance-analysis" target="_blank" rel="noopener noreferrer" style="color: var(--text-gold); text-decoration: underline;">GitHub Repository &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Architectural SVG Stage -->
+      <div class="detail-visual-stage">
+        <svg viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="detGrad3" cx="50%" cy="40%" r="70%">
+              <stop offset="0%" stop-color="#1e1c0c" />
+              <stop offset="70%" stop-color="#0d0c05" />
+              <stop offset="100%" stop-color="#040401" />
+            </radialGradient>
+          </defs>
+          <rect width="900" height="500" fill="url(#detGrad3)" />
+
+          <!-- Coordinate Grid Lines -->
+          <g stroke="rgba(203, 180, 147, 0.1)" stroke-width="0.8">
+            <line x1="80" y1="50" x2="80" y2="430" />
+            <line x1="80" y1="430" x2="820" y2="430" />
+            <line x1="80" y1="335" x2="820" y2="335" stroke-dasharray="4,4" />
+            <line x1="80" y1="240" x2="820" y2="240" stroke-dasharray="4,4" />
+            <line x1="80" y1="145" x2="820" y2="145" stroke-dasharray="4,4" />
+          </g>
+
+          <!-- Polynomial Curve -->
+          <path d="M100 390 C 220 360, 320 150, 460 110 C 600 70, 720 220, 800 320" fill="none" stroke="#cbb493" stroke-width="3.5" stroke-linecap="round" />
+          <path d="M100 390 C 220 360, 320 150, 460 110 C 600 70, 720 220, 800 320 L800 430 L100 430 Z" fill="rgba(203, 180, 147, 0.06)" />
+
+          <!-- Data Points -->
+          <circle cx="160" cy="370" r="6" fill="#e7dcce" />
+          <circle cx="240" cy="280" r="6" fill="#e7dcce" />
+          <circle cx="340" cy="170" r="6" fill="#e7dcce" />
+          <circle cx="460" cy="110" r="8" fill="#cbb493" stroke="#fff" stroke-width="2" />
+          <circle cx="580" cy="95" r="6" fill="#e7dcce" />
+          <circle cx="680" cy="175" r="6" fill="#e7dcce" />
+          <circle cx="760" cy="270" r="6" fill="#e7dcce" />
+
+          <!-- Callout Marker -->
+          <g transform="translate(460, 70)">
+            <rect x="-80" y="-35" width="160" height="28" rx="4" fill="#0d0c05" stroke="#cbb493" stroke-width="1.2" />
+            <text x="0" y="-17" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" text-anchor="middle">OPTIMAL YIELD PEAK</text>
+            <line x1="0" y1="-7" x2="0" y2="30" stroke="#cbb493" stroke-width="1.2" />
+          </g>
+
+          <text x="450" y="45" fill="#e7dcce" font-family="'Cinzel', serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.5">WEATHER-YIELD NON-LINEAR CORRELATION MODEL</text>
+          <text x="820" y="455" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" text-anchor="end">Rainfall Index (mm)</text>
+          <text x="90" y="70" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Crop Yield (kg/ha)</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTIONS -->
+    <div class="detail-split-grid">
+
+      <!-- Left Column -->
+      <div class="detail-main-col">
+        <h2>1. PROJECT OVERVIEW</h2>
+        <p class="detail-paragraph">
+          The Seasonal Agriculture Performance Analysis is an exploratory data science study designed to investigate how climatic shifts and monsoonal variations impact agricultural productivity across multiple harvesting seasons. By combining historical rainfall, temperature indices, and regional crop yield statistics, this project identifies significant yield determinants.
+        </p>
+
+        <h2>2. PROBLEM STATEMENT</h2>
+        <p class="detail-paragraph">
+          Agricultural sectors face severe exposure to climatic unpredictability. Fluctuating monsoon timing, erratic rainfall volumes, and prolonged dry spells lead to sharp yield fluctuations. Traditional farming strategies lack clear quantitative insights into how specific weather anomalies affect specific seasonal crops (Kharif, Rabi, and Zaid).
+        </p>
+
+        <h2>3. PROJECT OBJECTIVES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Multi-Year Dataset Aggregation</strong>
+              <span>Preprocess and clean multi-year historical datasets encompassing seasonal crop yields and climatic variables.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Statistical Correlation Analysis</strong>
+              <span>Quantify the correlation between precipitation levels, temperature variances, and crop productivity per district.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Analytical Data Visualization</strong>
+              <span>Design publication-quality visual models (heatmaps, scatter distributions, polynomial regression fits) to communicate actionable insights.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>4. KEY FEATURES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Seasonal Performance Stratification</strong>
+              <span>Disaggregated analysis across Kharif, Rabi, and summer cropping cycles to isolate season-specific vulnerabilities.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Rainfall Threshold Identification</strong>
+              <span>Identified optimal rainfall ranges beyond which additional precipitation yielded diminishing or negative crop returns.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Regional Variance Mapping</strong>
+              <span>Uncovered regional productivity gaps, pinpointing districts with elevated sensitivity to delayed monsoonal onset.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>5. IMPLEMENTATION DETAILS</h2>
+        <p class="detail-paragraph">
+          The exploratory pipeline was authored in <strong>Python</strong> within a Jupyter analysis environment. <strong>Pandas</strong> was used for data wrangling, missing-value imputation, merging meteorological records with crop production figures, and computing aggregate metrics. <strong>NumPy</strong> supported numerical transformations and normalization. <strong>Seaborn</strong> and <strong>Matplotlib</strong> were employed to generate correlation matrices, distribution plots, and trend curves.
+        </p>
+
+        <h2>6. RESULTS &amp; LEARNINGS</h2>
+        <p class="detail-paragraph">
+          The study successfully mapped non-linear relationships between precipitation and yield, revealing critical thresholds for Kharif crops. Key learnings included mastering multi-table data harmonization, interpreting correlation heatmaps critically without confounding correlation with causation, and crafting intuitive visual data narratives.
+        </p>
+      </div>
+
+      <!-- Right Column -->
+      <aside class="detail-side-col">
+        <div class="detail-side-card">
+          <h3>TECHNOLOGY STACK</h3>
+          <div class="card-tech-wrap" style="margin-top: 1rem;">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Pandas</span>
+            <span class="tech-chip">NumPy</span>
+            <span class="tech-chip">Matplotlib</span>
+            <span class="tech-chip">Seaborn</span>
+            <span class="tech-chip">Exploratory Data Analysis</span>
+            <span class="tech-chip">Statistical Modeling</span>
+          </div>
+
+          <h3 style="margin-top: 2rem;">REPOSITORY ACCESS</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+            Jupyter notebooks, datasets, and visualizations are publicly available on GitHub:
+          </p>
+
+          <div class="detail-action-buttons">
+            <a href="https://github.com/Omprakash30760/seasonal-agriculture-performance-analysis" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <span>VIEW GITHUB REPO</span>
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; fill: none;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../projects.html#data-analytics" class="btn-secondary-action">
+              <span>&larr; BACK TO ALL PROJECTS</span>
+            </a>
+            <a href="../index.html" class="btn-secondary-action" style="border-color: var(--border-gold-light);">
+              <span>&larr; MAIN PORTFOLIO</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>OM PRAKASH JENA</h4>
+          <p>Software Developer | AI &amp; Data Science &bull; KL University</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="../projects.html">All Projects</a></li>
+          <li><a href="../index.html">Main Portfolio</a></li>
+          <li><a href="https://github.com/Omprakash30760" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/om-prakash-jena-443b74317/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#top" style="color: var(--text-gold);">Back To Top &uarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Om Prakash Jena. All Rights Reserved.</span>
+        <span>Seasonal Agriculture Performance Analysis &bull; Data Science</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Retail Sales Analysis | Om Prakash Jena</title>
+  <meta name="description" content="Technical study of Retail Sales Analysis by Om Prakash Jena: Exploratory analysis on ~10,000 Superstore records examining regional sales, profit margins, and revenue trends." />
+  <meta name="author" content="Om Prakash Jena" />
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030B1D'/><text x='50' y='68' font-family='Georgia,serif' font-size='55' font-weight='bold' fill='%23e7dcce' text-anchor='middle'>OJ</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../projects.css" />
+</head>
+<body id="top">
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="page-container header-inner">
+      <a href="../projects.html" class="brand-block" title="Back to All Projects">
+        <span class="brand-monogram">OJ</span>
+        <div class="brand-text">
+          <span class="brand-name">OM PRAKASH JENA</span>
+          <span class="brand-sub">TECHNICAL CASE STUDY &bull; PROJECT 04</span>
+        </div>
+      </a>
+
+      <nav aria-label="Breadcrumb Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="../projects.html" class="btn-back-home" title="Back to Projects Showcase">
+              <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>ALL PROJECTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html" class="btn-back-home" style="border-color: var(--border-gold-light);" title="Back to Main Portfolio">
+              <span>MAIN PORTFOLIO</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- HERO HEADER -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="../index.html">PORTFOLIO</a> &bull;
+        <a href="../projects.html">PROJECTS</a> &bull;
+        <span>DATA ANALYTICS</span>
+      </div>
+
+      <h1 class="detail-title">RETAIL SALES ANALYSIS</h1>
+      <p class="detail-subtitle">
+        Performed exploratory analysis on approximately 10,000 Superstore dataset records, examining regional sales, profit margins, and monthly revenue trends.
+      </p>
+
+      <!-- Metadata Panel -->
+      <div class="detail-meta-panel">
+        <div class="meta-block">
+          <span class="meta-block-label">Category</span>
+          <span class="meta-block-value">Data Analytics &amp; EDA</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Core Tools</span>
+          <span class="meta-block-value">Python &bull; Pandas &bull; Seaborn</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Dataset Volume</span>
+          <span class="meta-block-value">~10,000 Superstore Transactions</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Source Code</span>
+          <span class="meta-block-value"><a href="https://github.com/Omprakash30760/Retail-Sales-Analysis" target="_blank" rel="noopener noreferrer" style="color: var(--text-gold); text-decoration: underline;">GitHub Repository &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Architectural SVG Stage -->
+      <div class="detail-visual-stage">
+        <svg viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="detGrad4" cx="50%" cy="40%" r="70%">
+              <stop offset="0%" stop-color="#121b28" />
+              <stop offset="70%" stop-color="#080e16" />
+              <stop offset="100%" stop-color="#020407" />
+            </radialGradient>
+          </defs>
+          <rect width="900" height="500" fill="url(#detGrad4)" />
+
+          <!-- Delicate Grid Lines -->
+          <g stroke="rgba(203, 180, 147, 0.08)" stroke-width="0.8">
+            <line x1="80" y1="50" x2="80" y2="430" />
+            <line x1="80" y1="430" x2="820" y2="430" />
+            <line x1="80" y1="335" x2="820" y2="335" stroke-dasharray="4,4" />
+            <line x1="80" y1="240" x2="820" y2="240" stroke-dasharray="4,4" />
+            <line x1="80" y1="145" x2="820" y2="145" stroke-dasharray="4,4" />
+          </g>
+
+          <!-- Monthly Revenue & Profit Margin Composite Chart -->
+          <!-- Revenue Bars -->
+          <g transform="translate(110, 140)">
+            <!-- Jan to Dec Bars -->
+            <rect x="0" y="160" width="38" height="130" rx="3" fill="#cbb493" opacity="0.75" />
+            <rect x="58" y="140" width="38" height="150" rx="3" fill="#cbb493" opacity="0.75" />
+            <rect x="116" y="110" width="38" height="180" rx="3" fill="#cbb493" opacity="0.75" />
+            <rect x="174" y="150" width="38" height="140" rx="3" fill="#cbb493" opacity="0.75" />
+            <rect x="232" y="100" width="38" height="190" rx="3" fill="#cbb493" opacity="0.8" />
+            <rect x="290" y="80" width="38" height="210" rx="3" fill="#cbb493" opacity="0.85" />
+            <rect x="348" y="120" width="38" height="170" rx="3" fill="#cbb493" opacity="0.8" />
+            <rect x="406" y="90" width="38" height="200" rx="3" fill="#cbb493" opacity="0.85" />
+            <rect x="464" y="60" width="38" height="230" rx="3" fill="#cbb493" opacity="0.9" />
+            <rect x="522" y="40" width="38" height="250" rx="3" fill="#cbb493" opacity="0.9" />
+            <rect x="580" y="15" width="38" height="275" rx="3" fill="#e7dcce" />
+            <rect x="638" y="0" width="38" height="290" rx="3" fill="#e7dcce" />
+
+            <!-- Profit Margin Trendline -->
+            <path d="M19 140 L77 125 L135 95 L193 130 L251 85 L309 65 L367 100 L425 70 L483 45 L541 30 L599 10 L657 0" fill="none" stroke="#e7dcce" stroke-width="2.5" stroke-linecap="round" />
+            <!-- Circles on profit points -->
+            <circle cx="19" cy="140" r="4" fill="#cbb493" />
+            <circle cx="135" cy="95" r="4" fill="#cbb493" />
+            <circle cx="309" cy="65" r="4" fill="#cbb493" />
+            <circle cx="483" cy="45" r="4" fill="#cbb493" />
+            <circle cx="657" cy="0" r="6" fill="#e7dcce" stroke="#030B1D" stroke-width="1.5" />
+          </g>
+
+          <text x="450" y="50" fill="#e7dcce" font-family="'Cinzel', serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.5">SUPERSTORE REVENUE VELOCITY &amp; PROFIT MARGIN ANALYSIS</text>
+          <text x="820" y="455" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" text-anchor="end">Monthly Financial Periods (Jan - Dec)</text>
+          <text x="90" y="80" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Revenue ($ Thousands)</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTIONS -->
+    <div class="detail-split-grid">
+
+      <!-- Left Column -->
+      <div class="detail-main-col">
+        <h2>1. PROJECT OVERVIEW</h2>
+        <p class="detail-paragraph">
+          The Retail Sales Analysis is an exploratory data analytics project investigating approximately 10,000 transaction records from the widely studied Superstore retail dataset. The project provides an empirical breakdown of sales volume, net profit margins, customer segment contributions, and geographical revenue distributions across multiple years of operation.
+        </p>
+
+        <h2>2. PROBLEM STATEMENT</h2>
+        <p class="detail-paragraph">
+          Commercial retail organizations frequently experience revenue growth without corresponding profit growth due to hidden discount inefficiencies, high-cost shipping modes, and loss-leading product subcategories. Without exploratory analysis of transaction logs, business stakeholders cannot isolate which regional segments truly generate sustainable margins.
+        </p>
+
+        <h2>3. PROJECT OBJECTIVES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Transaction Dataset Audit</strong>
+              <span>Perform structured data cleaning on ~10,000 commercial transactions, converting date-time formats and standardizing categorization.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Profit Margin Disaggregation</strong>
+              <span>Compare gross sales figures directly against net profitability to identify negative-margin product categories and discount anomalies.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Customer Segment &amp; Regional Insights</strong>
+              <span>Quantify the revenue velocity across Corporate, Consumer, and Home Office segments across Central, East, South, and West territories.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>4. KEY FEATURES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Monthly Revenue Seasonality</strong>
+              <span>Identified Q4 revenue surges (November-December) driven by holiday shopping, contrasting with slower Q1 transaction velocity.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Discount vs Profit Sensitivity Analysis</strong>
+              <span>Demonstrated that discounts exceeding 20% in certain furniture categories systematically generated net negative profit returns.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Geographical Margin Mapping</strong>
+              <span>Isolated regional performance discrepancies, highlighting the West region as the highest consistent profit contributor.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>5. IMPLEMENTATION DETAILS</h2>
+        <p class="detail-paragraph">
+          The analytics pipeline was built in <strong>Python</strong> using <strong>Pandas</strong> for tabular manipulation. Aggregation queries utilized <code>groupby</code>, multi-column filtering, and pivot tables to aggregate monthly metrics and compute profitability ratios. Visual reporting was constructed using <strong>Matplotlib</strong> and <strong>Seaborn</strong>, leveraging bar distributions, heatmaps, and time-series line charts.
+        </p>
+
+        <h2>6. RESULTS &amp; LEARNINGS</h2>
+        <p class="detail-paragraph">
+          The analysis demonstrated how commercial business metrics can be derived systematically from raw transaction records. Key learnings included recognizing that gross revenue is a misleading indicator of business health when disconnected from margin analysis, structuring clean exploratory notebooks, and mastering Pandas date-time aggregations.
+        </p>
+      </div>
+
+      <!-- Right Column -->
+      <aside class="detail-side-col">
+        <div class="detail-side-card">
+          <h3>TECHNOLOGY STACK</h3>
+          <div class="card-tech-wrap" style="margin-top: 1rem;">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Pandas</span>
+            <span class="tech-chip">Matplotlib</span>
+            <span class="tech-chip">Seaborn</span>
+            <span class="tech-chip">Data Cleaning</span>
+            <span class="tech-chip">Financial Modeling</span>
+            <span class="tech-chip">Cohort Analytics</span>
+          </div>
+
+          <h3 style="margin-top: 2rem;">REPOSITORY ACCESS</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+            Source code, analysis notebooks, and visualization outputs are published on GitHub:
+          </p>
+
+          <div class="detail-action-buttons">
+            <a href="https://github.com/Omprakash30760/Retail-Sales-Analysis" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <span>VIEW GITHUB REPO</span>
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; fill: none;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../projects.html#data-analytics" class="btn-secondary-action">
+              <span>&larr; BACK TO ALL PROJECTS</span>
+            </a>
+            <a href="../index.html" class="btn-secondary-action" style="border-color: var(--border-gold-light);">
+              <span>&larr; MAIN PORTFOLIO</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>OM PRAKASH JENA</h4>
+          <p>Software Developer | AI &amp; Data Science &bull; KL University</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="../projects.html">All Projects</a></li>
+          <li><a href="../index.html">Main Portfolio</a></li>
+          <li><a href="https://github.com/Omprakash30760" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/om-prakash-jena-443b74317/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#top" style="color: var(--text-gold);">Back To Top &uarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Om Prakash Jena. All Rights Reserved.</span>
+        <span>Retail Sales Analysis &bull; Data Analytics</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

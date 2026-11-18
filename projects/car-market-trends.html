@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Car Market Trends Analysis | Om Prakash Jena</title>
+  <meta name="description" content="Technical case study of Car Market Trends Analysis by Om Prakash Jena: Automotive pricing dynamics, depreciation curves, mileage distributions, and regression models." />
+  <meta name="author" content="Om Prakash Jena" />
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030B1D'/><text x='50' y='68' font-family='Georgia,serif' font-size='55' font-weight='bold' fill='%23e7dcce' text-anchor='middle'>OJ</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../projects.css" />
+</head>
+<body id="top">
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="page-container header-inner">
+      <a href="../projects.html" class="brand-block" title="Back to All Projects">
+        <span class="brand-monogram">OJ</span>
+        <div class="brand-text">
+          <span class="brand-name">OM PRAKASH JENA</span>
+          <span class="brand-sub">TECHNICAL CASE STUDY &bull; PROJECT 06</span>
+        </div>
+      </a>
+
+      <nav aria-label="Breadcrumb Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="../projects.html" class="btn-back-home" title="Back to Projects Showcase">
+              <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>ALL PROJECTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html" class="btn-back-home" style="border-color: var(--border-gold-light);" title="Back to Main Portfolio">
+              <span>MAIN PORTFOLIO</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- HERO HEADER -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="../index.html">PORTFOLIO</a> &bull;
+        <a href="../projects.html">PROJECTS</a> &bull;
+        <span>DATA ANALYTICS</span>
+      </div>
+
+      <h1 class="detail-title">CAR MARKET TRENDS ANALYSIS</h1>
+      <p class="detail-subtitle">
+        Analyzed vehicle pricing trends, mileage distributions, and fuel-type patterns using correlation heatmaps and regression visualizations.
+      </p>
+
+      <!-- Metadata Panel -->
+      <div class="detail-meta-panel">
+        <div class="meta-block">
+          <span class="meta-block-label">Category</span>
+          <span class="meta-block-value">Data Analytics &amp; Regression</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Core Tools</span>
+          <span class="meta-block-value">Python &bull; Pandas &bull; Visualization</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Modeling Techniques</span>
+          <span class="meta-block-value">Correlation Heatmaps &bull; Regression</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Source Code</span>
+          <span class="meta-block-value"><a href="https://github.com/Omprakash30760/Car_Market_Trends_Analysis" target="_blank" rel="noopener noreferrer" style="color: var(--text-gold); text-decoration: underline;">GitHub Repository &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Architectural SVG Stage -->
+      <div class="detail-visual-stage">
+        <svg viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="detGrad6" cx="50%" cy="40%" r="70%">
+              <stop offset="0%" stop-color="#112929" />
+              <stop offset="70%" stop-color="#061313" />
+              <stop offset="100%" stop-color="#020606" />
+            </radialGradient>
+          </defs>
+          <rect width="900" height="500" fill="url(#detGrad6)" />
+
+          <!-- Delicate Grid Lines -->
+          <g stroke="rgba(203, 180, 147, 0.08)" stroke-width="0.8">
+            <line x1="80" y1="50" x2="80" y2="430" />
+            <line x1="80" y1="430" x2="820" y2="430" />
+            <line x1="80" y1="335" x2="820" y2="335" stroke-dasharray="4,4" />
+            <line x1="80" y1="240" x2="820" y2="240" stroke-dasharray="4,4" />
+            <line x1="80" y1="145" x2="820" y2="145" stroke-dasharray="4,4" />
+          </g>
+
+          <!-- Non-linear Vehicle Depreciation Curves -->
+          <g transform="translate(90, 80)">
+            <!-- Curve 1: Premium Brands (Steeper early drop) -->
+            <path d="M20 30 Q 120 180, 320 230 T 700 270" fill="none" stroke="#cbb493" stroke-width="3" stroke-linecap="round" />
+            <text x="710" y="275" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">Luxury / Premium Curve</text>
+
+            <!-- Curve 2: Economy / Hybrid Brands (Flatter retention) -->
+            <path d="M20 70 Q 180 140, 400 180 T 700 215" fill="none" stroke="#e7dcce" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,4" />
+            <text x="710" y="220" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">Economy / Hybrid Curve</text>
+
+            <!-- Data point markers -->
+            <circle cx="20" cy="30" r="5" fill="#cbb493" />
+            <circle cx="160" cy="180" r="5" fill="#cbb493" />
+            <circle cx="340" cy="235" r="5" fill="#cbb493" />
+            <circle cx="520" cy="255" r="5" fill="#cbb493" />
+
+            <circle cx="20" cy="70" r="5" fill="#e7dcce" />
+            <circle cx="200" cy="145" r="5" fill="#e7dcce" />
+            <circle cx="420" cy="185" r="5" fill="#e7dcce" />
+            <circle cx="620" cy="205" r="5" fill="#e7dcce" />
+          </g>
+
+          <text x="450" y="45" fill="#e7dcce" font-family="'Cinzel', serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.5">VEHICLE VALUATION RETENTION &amp; DEPRECIATION MODEL</text>
+          <text x="820" y="455" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" text-anchor="end">Odometer Mileage &amp; Vehicle Age (Years) &rarr;</text>
+          <text x="90" y="80" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Resale Price Retention (%) &rarr;</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTIONS -->
+    <div class="detail-split-grid">
+
+      <!-- Left Column -->
+      <div class="detail-main-col">
+        <h2>1. PROJECT OVERVIEW</h2>
+        <p class="detail-paragraph">
+          The Car Market Trends Analysis is an applied automotive data science study examining secondary automotive valuation dynamics, historical price shifts, depreciation curves, and mileage sensitivities. The investigation leverages statistical regression models and multi-variable correlation heatmaps to model vehicle price retention.
+        </p>
+
+        <h2>2. PROBLEM STATEMENT</h2>
+        <p class="detail-paragraph">
+          Vehicle depreciation is non-linear and governed by complex compounding factors: brand equity, vehicle age, accumulated odometer mileage, transmission type, and fuel source. Both consumers and dealership operators often rely on rough heuristics rather than empirical regression models, resulting in suboptimal valuation pricing.
+        </p>
+
+        <h2>3. PROJECT OBJECTIVES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Automotive Dataset Preprocessing</strong>
+              <span>Clean and standardize secondary automotive sales logs, parsing numerical odometer readings, vehicle manufacture years, and categorical engine specifications.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Multi-Variable Correlation Heatmaps</strong>
+              <span>Map the statistical correlation coefficients between price, vehicle age, engine displacement, mileage, and transmission configurations.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Non-Linear Regression Modeling</strong>
+              <span>Fit regression curves depicting vehicle depreciation over 1-to-10 year lifespans across diverse manufacturer tiers.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>4. KEY FEATURES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Luxury vs Economy Depreciation Comparison</strong>
+              <span>Revealed that luxury marques experience steeper early depreciation (losing ~45% in years 1-3) compared to economy counterparts (~28%).</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Powertrain Resale Dynamics</strong>
+              <span>Quantified the emerging valuation premium for hybrid and fuel-efficient powertrains relative to pure diesel equivalents.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Mileage Elasticity Modeling</strong>
+              <span>Mapped non-linear price drops occurring at standard psychological odometer thresholds (e.g., 50,000 km and 100,000 km).</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>5. IMPLEMENTATION DETAILS</h2>
+        <p class="detail-paragraph">
+          The project was implemented in <strong>Python</strong> using <strong>Pandas</strong> for feature wrangling, handling missing vehicle specs, and encoding categorical variables such as fuel type and transmission. <strong>Matplotlib</strong> and <strong>Seaborn</strong> were utilized to render correlation matrices, joint scatter-density plots, and polynomial regression trendlines.
+        </p>
+
+        <h2>6. RESULTS &amp; LEARNINGS</h2>
+        <p class="detail-paragraph">
+          The analysis yielded an empirical understanding of automotive market mechanics. Key learnings included recognizing non-linear relationships in tabular regression data, identifying data leakage hazards when evaluating derived vehicle age metrics, and creating polished visualizations that clearly communicate statistical trends.
+        </p>
+      </div>
+
+      <!-- Right Column -->
+      <aside class="detail-side-col">
+        <div class="detail-side-card">
+          <h3>TECHNOLOGY STACK</h3>
+          <div class="card-tech-wrap" style="margin-top: 1rem;">
+            <span class="tech-chip">Python</span>
+            <span class="tech-chip">Pandas</span>
+            <span class="tech-chip">Data Visualization</span>
+            <span class="tech-chip">Regression Modeling</span>
+            <span class="tech-chip">Correlation Analysis</span>
+            <span class="tech-chip">Automotive Analytics</span>
+          </div>
+
+          <h3 style="margin-top: 2rem;">REPOSITORY ACCESS</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+            The complete Jupyter analysis notebook and datasets are available on GitHub:
+          </p>
+
+          <div class="detail-action-buttons">
+            <a href="https://github.com/Omprakash30760/Car_Market_Trends_Analysis" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <span>VIEW GITHUB REPO</span>
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; fill: none;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../projects.html#data-analytics" class="btn-secondary-action">
+              <span>&larr; BACK TO ALL PROJECTS</span>
+            </a>
+            <a href="../index.html" class="btn-secondary-action" style="border-color: var(--border-gold-light);">
+              <span>&larr; MAIN PORTFOLIO</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>OM PRAKASH JENA</h4>
+          <p>Software Developer | AI &amp; Data Science &bull; KL University</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="../projects.html">All Projects</a></li>
+          <li><a href="../index.html">Main Portfolio</a></li>
+          <li><a href="https://github.com/Omprakash30760" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/om-prakash-jena-443b74317/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#top" style="color: var(--text-gold);">Back To Top &uarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Om Prakash Jena. All Rights Reserved.</span>
+        <span>Car Market Trends Analysis &bull; Data Science</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

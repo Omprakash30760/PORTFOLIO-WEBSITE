@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Redundant archives and temporary frame extraction folder
+ezgif-*.zip
+ezgif-76e13575516e91b5-jpg/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*

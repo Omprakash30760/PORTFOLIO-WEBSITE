@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Student Wellness Hub | Om Prakash Jena</title>
+  <meta name="description" content="Technical case study of Student Wellness Hub by Om Prakash Jena: Mental wellness platform with mood telemetry, appointment scheduling, Spring Boot, and normalized MySQL." />
+  <meta name="author" content="Om Prakash Jena" />
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030B1D'/><text x='50' y='68' font-family='Georgia,serif' font-size='55' font-weight='bold' fill='%23e7dcce' text-anchor='middle'>OJ</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../projects.css" />
+</head>
+<body id="top">
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="page-container header-inner">
+      <a href="../projects.html" class="brand-block" title="Back to All Projects">
+        <span class="brand-monogram">OJ</span>
+        <div class="brand-text">
+          <span class="brand-name">OM PRAKASH JENA</span>
+          <span class="brand-sub">TECHNICAL CASE STUDY &bull; PROJECT 02</span>
+        </div>
+      </a>
+
+      <nav aria-label="Breadcrumb Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="../projects.html" class="btn-back-home" title="Back to Projects Showcase">
+              <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>ALL PROJECTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html" class="btn-back-home" style="border-color: var(--border-gold-light);" title="Back to Main Portfolio">
+              <span>MAIN PORTFOLIO</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- HERO HEADER -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="../index.html">PORTFOLIO</a> &bull;
+        <a href="../projects.html">PROJECTS</a> &bull;
+        <span>FULL STACK</span>
+      </div>
+
+      <h1 class="detail-title">STUDENT WELLNESS HUB</h1>
+      <p class="detail-subtitle">
+        Built a student wellness platform featuring mood tracking, appointment scheduling, and a normalized MySQL database schema across four or more tables.
+      </p>
+
+      <!-- Metadata Panel -->
+      <div class="detail-meta-panel">
+        <div class="meta-block">
+          <span class="meta-block-label">Category</span>
+          <span class="meta-block-value">Full Stack Web Development</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Primary Stack</span>
+          <span class="meta-block-value">React.js &bull; Material UI &bull; Spring Boot</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Database Schema</span>
+          <span class="meta-block-value">Normalized (4+ Relational Tables)</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Source Code</span>
+          <span class="meta-block-value"><a href="https://github.com/Omprakash30760" target="_blank" rel="noopener noreferrer" style="color: var(--text-gold); text-decoration: underline;">GitHub Profile &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Architectural SVG Stage -->
+      <div class="detail-visual-stage">
+        <svg viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="detGrad2" cx="50%" cy="40%" r="70%">
+              <stop offset="0%" stop-color="#0a2327" />
+              <stop offset="70%" stop-color="#041215" />
+              <stop offset="100%" stop-color="#010608" />
+            </radialGradient>
+          </defs>
+          <rect width="900" height="500" fill="url(#detGrad2)" />
+
+          <!-- Grid Lines -->
+          <g stroke="rgba(203, 180, 147, 0.08)" stroke-width="0.8">
+            <line x1="0" y1="125" x2="900" y2="125" />
+            <line x1="0" y1="250" x2="900" y2="250" />
+            <line x1="0" y1="375" x2="900" y2="375" />
+            <line x1="225" y1="0" x2="225" y2="500" />
+            <line x1="450" y1="0" x2="450" y2="500" />
+            <line x1="675" y1="0" x2="675" y2="500" />
+          </g>
+
+          <!-- 4-Table Normalized Relational Schema Visualization -->
+          <!-- Table 1: Users/Students -->
+          <g transform="translate(60, 90)">
+            <rect x="0" y="0" width="220" height="150" rx="6" fill="#06191c" stroke="rgba(203, 180, 147, 0.3)" stroke-width="1.2" />
+            <rect x="0" y="0" width="220" height="30" rx="6" fill="#0e343a" />
+            <text x="110" y="20" fill="#e7dcce" font-family="'Cinzel', serif" font-size="10" font-weight="700" text-anchor="middle">TABLE: STUDENTS</text>
+            <text x="20" y="55" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">PK: student_id (INT)</text>
+            <text x="20" y="75" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">name (VARCHAR)</text>
+            <text x="20" y="95" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">email (VARCHAR, UNIQUE)</text>
+            <text x="20" y="115" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">department (VARCHAR)</text>
+          </g>
+
+          <!-- Table 2: Counselors -->
+          <g transform="translate(620, 90)">
+            <rect x="0" y="0" width="220" height="150" rx="6" fill="#06191c" stroke="rgba(203, 180, 147, 0.3)" stroke-width="1.2" />
+            <rect x="0" y="0" width="220" height="30" rx="6" fill="#0e343a" />
+            <text x="110" y="20" fill="#e7dcce" font-family="'Cinzel', serif" font-size="10" font-weight="700" text-anchor="middle">TABLE: COUNSELORS</text>
+            <text x="20" y="55" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">PK: counselor_id (INT)</text>
+            <text x="20" y="75" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">specialization (VARCHAR)</text>
+            <text x="20" y="95" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">availability_matrix (JSON)</text>
+            <text x="20" y="115" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">max_capacity (INT)</text>
+          </g>
+
+          <!-- Table 3: Appointments (Join/Transactional) -->
+          <g transform="translate(340, 80)">
+            <rect x="0" y="0" width="220" height="175" rx="6" fill="#0a262a" stroke="rgba(203, 180, 147, 0.5)" stroke-width="1.4" />
+            <rect x="0" y="0" width="220" height="30" rx="6" fill="#14464f" />
+            <text x="110" y="20" fill="#e7dcce" font-family="'Cinzel', serif" font-size="10" font-weight="700" text-anchor="middle">TABLE: APPOINTMENTS</text>
+            <text x="20" y="55" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700">PK: appointment_id</text>
+            <text x="20" y="75" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">FK: student_id &rarr; STUDENTS</text>
+            <text x="20" y="95" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">FK: counselor_id &rarr; COUNSELORS</text>
+            <text x="20" y="115" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">slot_time (DATETIME)</text>
+            <text x="20" y="135" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">status (PENDING, CONFIRMED)</text>
+            <text x="20" y="155" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">notes (TEXT, ENCRYPTED)</text>
+          </g>
+
+          <!-- Relational Links -->
+          <g stroke="#cbb493" stroke-width="1.2" stroke-dasharray="4,4">
+            <line x1="280" y1="165" x2="340" y2="165" />
+            <line x1="560" y1="165" x2="620" y2="165" />
+          </g>
+
+          <!-- Table 4: Mood Tracking Telemetry (Bottom) -->
+          <g transform="translate(200, 290)">
+            <rect x="0" y="0" width="500" height="150" rx="6" fill="#06191c" stroke="rgba(203, 180, 147, 0.3)" stroke-width="1.2" />
+            <rect x="0" y="0" width="500" height="30" rx="6" fill="#0e343a" />
+            <text x="250" y="20" fill="#e7dcce" font-family="'Cinzel', serif" font-size="10" font-weight="700" text-anchor="middle">TABLE: MOOD_LOGS &bull; TELEMETRY</text>
+            <!-- Mood Pulse Visualization -->
+            <path d="M25 80 L75 80 L90 55 L105 105 L120 40 L135 90 L150 75 L165 80 L230 80 L245 60 L260 100 L275 45 L290 85 L305 80 L475 80" fill="none" stroke="#cbb493" stroke-width="1.8" />
+            <text x="30" y="125" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">FK: student_id &bull; timestamp (TIMESTAMP) &bull; valence_score (1-10) &bull; emotion_tags (VARCHAR)</text>
+          </g>
+
+          <text x="450" y="45" fill="#e7dcce" font-family="'Cinzel', serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.5">RELATIONAL DATABASE SCHEMA &bull; 4+ NORMALIZED TABLES</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTIONS -->
+    <div class="detail-split-grid">
+
+      <!-- Left Column: Narrative -->
+      <div class="detail-main-col">
+
+        <h2>1. PROJECT OVERVIEW</h2>
+        <p class="detail-paragraph">
+          The Student Wellness Hub is a full-stack digital mental wellness platform developed to promote self-guided mental health tracking and confidential counseling appointments within collegiate environments. Built with a responsive React.js and Material UI client and a Spring Boot backend, the platform bridges the gap between campus support resources and students.
+        </p>
+
+        <h2>2. PROBLEM STATEMENT</h2>
+        <p class="detail-paragraph">
+          University students frequently face academic stress, burnout, and social isolation. However, seeking professional counseling is often hindered by friction: lack of anonymity, convoluted manual scheduling, missed notifications, and absence of personal longitudinal mood awareness tools. The objective was to engineer an intuitive, private application combining self-reflection telemetry with streamlined appointment scheduling.
+        </p>
+
+        <h2>3. PROJECT OBJECTIVES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Longitudinal Sentiment Telemetry</strong>
+              <span>Provide students with daily visual mood logging to recognize cyclical stress triggers and track emotional wellness trends over weeks and months.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Automated Conflict-Free Appointment Scheduling</strong>
+              <span>Construct a calendar engine preventing double bookings and allowing students to seamlessly secure confidential counseling slots.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Robust Database Normalization</strong>
+              <span>Architect a normalized relational database schema across 4+ tables to isolate student identities, counseling notes, and session logs.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>4. KEY FEATURES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Daily Mood Journaling &amp; Analytics</strong>
+              <span>Interactive mood rating sliders with categorized emotion tags and dynamic visual trend curves.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Counselor Availability Engine</strong>
+              <span>Displays real-time open slots, manages booking statuses (Pending, Confirmed, Completed), and allows confidential cancellation.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Empathetic Material UI Design System</strong>
+              <span>Customized theme utilizing calming midnight teal tones, accessible contrast levels, and responsive layouts across mobile and desktop.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>5. IMPLEMENTATION DETAILS</h2>
+        <p class="detail-paragraph">
+          The backend service was structured in <strong>Spring Boot</strong> using RESTful API principles. Entity relationships were mapped using <strong>Hibernate ORM</strong> across four core relational tables: Students, Counselors, Appointments, and MoodLogs. Service methods enforce transactional consistency, ensuring booking conflicts trigger immediate rollbacks before records are committed.
+        </p>
+        <p class="detail-paragraph">
+          The frontend utilizes <strong>React.js</strong> and <strong>Material UI</strong> component libraries, customized with clean theme typography and custom emotion icons. Reusable hooks manage asynchronous API states for fetching real-time counselor rosters and rendering mood telemetry charts.
+        </p>
+
+        <h2>6. RESULTS &amp; LEARNINGS</h2>
+        <p class="detail-paragraph">
+          The application demonstrated practical full-stack integration between React and Spring Boot. Database normalization reduced redundant data across user and booking tables, improving query efficiency. Key learnings included designing user-empathetic interfaces, handling date-time serialization across time zones in REST APIs, and structuring relational database foreign key cascades.
+        </p>
+      </div>
+
+      <!-- Right Column: Sidebar Specs & Actions -->
+      <aside class="detail-side-col">
+        <div class="detail-side-card">
+          <h3>TECHNOLOGY STACK</h3>
+          <div class="card-tech-wrap" style="margin-top: 1rem;">
+            <span class="tech-chip">React.js</span>
+            <span class="tech-chip">Material UI</span>
+            <span class="tech-chip">Spring Boot</span>
+            <span class="tech-chip">Hibernate ORM</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">REST APIs</span>
+            <span class="tech-chip">Schema Normalization</span>
+            <span class="tech-chip">Transactional Services</span>
+          </div>
+
+          <h3 style="margin-top: 2rem;">REPOSITORY ACCESS</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+            Project documentation, database schema scripts, and source code are maintained on GitHub:
+          </p>
+
+          <div class="detail-action-buttons">
+            <a href="https://github.com/Omprakash30760" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <span>VIEW GITHUB PROFILE</span>
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; fill: none;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../projects.html#full-stack" class="btn-secondary-action">
+              <span>&larr; BACK TO ALL PROJECTS</span>
+            </a>
+            <a href="../index.html" class="btn-secondary-action" style="border-color: var(--border-gold-light);">
+              <span>&larr; MAIN PORTFOLIO</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>OM PRAKASH JENA</h4>
+          <p>Software Developer | AI &amp; Data Science &bull; KL University</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="../projects.html">All Projects</a></li>
+          <li><a href="../index.html">Main Portfolio</a></li>
+          <li><a href="https://github.com/Omprakash30760" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/om-prakash-jena-443b74317/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#top" style="color: var(--text-gold);">Back To Top &uarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Om Prakash Jena. All Rights Reserved.</span>
+        <span>Student Wellness Hub &bull; Full Stack Web Development</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

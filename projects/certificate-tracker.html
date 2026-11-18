@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Certificate Tracker Application | Om Prakash Jena</title>
+  <meta name="description" content="Technical case study of Certificate Tracker Application by Om Prakash Jena: Full stack credential management system with Spring Boot, React.js, Hibernate ORM, and MySQL." />
+  <meta name="author" content="Om Prakash Jena" />
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23030B1D'/><text x='50' y='68' font-family='Georgia,serif' font-size='55' font-weight='bold' fill='%23e7dcce' text-anchor='middle'>OJ</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cinzel:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../projects.css" />
+</head>
+<body id="top">
+
+  <!-- TOP HEADER -->
+  <header class="site-header">
+    <div class="page-container header-inner">
+      <a href="../projects.html" class="brand-block" title="Back to All Projects">
+        <span class="brand-monogram">OJ</span>
+        <div class="brand-text">
+          <span class="brand-name">OM PRAKASH JENA</span>
+          <span class="brand-sub">TECHNICAL CASE STUDY &bull; PROJECT 01</span>
+        </div>
+      </a>
+
+      <nav aria-label="Breadcrumb Navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="../projects.html" class="btn-back-home" title="Back to Projects Showcase">
+              <svg viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>ALL PROJECTS</span>
+            </a>
+          </li>
+          <li>
+            <a href="../index.html" class="btn-back-home" style="border-color: var(--border-gold-light);" title="Back to Main Portfolio">
+              <span>MAIN PORTFOLIO</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- HERO HEADER -->
+    <section class="detail-hero">
+      <div class="detail-breadcrumb">
+        <a href="../index.html">PORTFOLIO</a> &bull;
+        <a href="../projects.html">PROJECTS</a> &bull;
+        <span>FULL STACK</span>
+      </div>
+
+      <h1 class="detail-title">CERTIFICATE TRACKER APPLICATION</h1>
+      <p class="detail-subtitle">
+        Developed a certificate management portal supporting role-based access control, JWT authentication, and REST APIs to manage more than 1,000 student records.
+      </p>
+
+      <!-- Metadata Panel -->
+      <div class="detail-meta-panel">
+        <div class="meta-block">
+          <span class="meta-block-label">Category</span>
+          <span class="meta-block-value">Full Stack Web Development</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Primary Stack</span>
+          <span class="meta-block-value">React.js &bull; Spring Boot &bull; MySQL</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Scale &amp; Capacity</span>
+          <span class="meta-block-value">1,000+ Student Records</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-block-label">Source Code</span>
+          <span class="meta-block-value"><a href="https://github.com/Omprakash30760/FSAD-TEAM-25-CertiTracker-App-Frontend" target="_blank" rel="noopener noreferrer" style="color: var(--text-gold); text-decoration: underline;">GitHub Repository &rarr;</a></span>
+        </div>
+      </div>
+
+      <!-- Architectural SVG Stage -->
+      <div class="detail-visual-stage">
+        <svg viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <radialGradient id="detGrad1" cx="50%" cy="40%" r="70%">
+              <stop offset="0%" stop-color="#0c1a2f" />
+              <stop offset="70%" stop-color="#050e1c" />
+              <stop offset="100%" stop-color="#02060d" />
+            </radialGradient>
+          </defs>
+          <rect width="900" height="500" fill="url(#detGrad1)" />
+
+          <!-- Delicate Grid -->
+          <g stroke="rgba(203, 180, 147, 0.08)" stroke-width="0.8">
+            <line x1="0" y1="125" x2="900" y2="125" />
+            <line x1="0" y1="250" x2="900" y2="250" />
+            <line x1="0" y1="375" x2="900" y2="375" />
+            <line x1="225" y1="0" x2="225" y2="500" />
+            <line x1="450" y1="0" x2="450" y2="500" />
+            <line x1="675" y1="0" x2="675" y2="500" />
+          </g>
+
+          <!-- System Flow Architecture Diagram -->
+          <!-- 1. Client Layer -->
+          <g transform="translate(60, 120)">
+            <rect x="0" y="0" width="220" height="260" rx="6" fill="#061324" stroke="rgba(203, 180, 147, 0.3)" stroke-width="1.2" />
+            <rect x="0" y="0" width="220" height="36" rx="6" fill="#0d233e" />
+            <text x="110" y="23" fill="#e7dcce" font-family="'Cinzel', serif" font-size="11" font-weight="700" text-anchor="middle">CLIENT INTERFACE</text>
+            <text x="25" y="65" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">React.js Client Application</text>
+            <text x="25" y="85" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Dynamic Certificate Portal</text>
+            <text x="25" y="105" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Axios Interceptor Token Bridge</text>
+            <text x="25" y="125" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Student &amp; Admin Dashboards</text>
+            <text x="25" y="145" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Real-time Verification Search</text>
+            <!-- Badge -->
+            <rect x="25" y="200" width="170" height="28" rx="4" fill="rgba(203, 180, 147, 0.1)" stroke="rgba(203, 180, 147, 0.2)" />
+            <text x="110" y="218" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">RESPONSIVE SPA</text>
+          </g>
+
+          <!-- Connector Arrow 1 -->
+          <g stroke="#cbb493" stroke-width="1.5" fill="none">
+            <line x1="280" y1="250" x2="340" y2="250" />
+            <polygon points="340,246 348,250 340,254" fill="#cbb493" />
+            <text x="314" y="240" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" text-anchor="middle" stroke="none">REST / JWT</text>
+          </g>
+
+          <!-- 2. Backend Engine -->
+          <g transform="translate(350, 100)">
+            <rect x="0" y="0" width="220" height="300" rx="6" fill="#08182b" stroke="rgba(203, 180, 147, 0.4)" stroke-width="1.4" />
+            <rect x="0" y="0" width="220" height="36" rx="6" fill="#142c4a" />
+            <text x="110" y="23" fill="#e7dcce" font-family="'Cinzel', serif" font-size="11" font-weight="700" text-anchor="middle">BACKEND REST API</text>
+            <text x="25" y="65" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">Spring Boot 3.0 Engine</text>
+            <text x="25" y="85" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Spring Security &amp; JWT Filter</text>
+            <text x="25" y="105" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Role-Based Access Control</text>
+            <text x="25" y="125" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Controller &bull; Service &bull; Repo</text>
+            <text x="25" y="145" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Hibernate ORM Persistence</text>
+            <text x="25" y="165" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Transactional Verification</text>
+            <!-- Badge -->
+            <rect x="25" y="235" width="170" height="28" rx="4" fill="rgba(203, 180, 147, 0.1)" stroke="rgba(203, 180, 147, 0.2)" />
+            <text x="110" y="253" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">STATELESS JWT AUTH</text>
+          </g>
+
+          <!-- Connector Arrow 2 -->
+          <g stroke="#cbb493" stroke-width="1.5" fill="none">
+            <line x1="570" y1="250" x2="630" y2="250" />
+            <polygon points="630,246 638,250 630,254" fill="#cbb493" />
+            <text x="604" y="240" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" text-anchor="middle" stroke="none">JPA / SQL</text>
+          </g>
+
+          <!-- 3. Database Layer -->
+          <g transform="translate(640, 120)">
+            <rect x="0" y="0" width="200" height="260" rx="6" fill="#061324" stroke="rgba(203, 180, 147, 0.3)" stroke-width="1.2" />
+            <rect x="0" y="0" width="200" height="36" rx="6" fill="#0d233e" />
+            <text x="100" y="23" fill="#e7dcce" font-family="'Cinzel', serif" font-size="11" font-weight="700" text-anchor="middle">PERSISTENCE</text>
+            <text x="25" y="65" fill="#cbb493" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">MySQL Database</text>
+            <text x="25" y="85" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Normalized Entity Schema</text>
+            <text x="25" y="105" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Foreign Key Integrity</text>
+            <text x="25" y="125" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; Indexed Search Columns</text>
+            <text x="25" y="145" fill="#8e97a6" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5">&bull; 1,000+ Student Records</text>
+            <!-- Badge -->
+            <rect x="20" y="200" width="160" height="28" rx="4" fill="rgba(203, 180, 147, 0.1)" stroke="rgba(203, 180, 147, 0.2)" />
+            <text x="100" y="218" fill="#e7dcce" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" text-anchor="middle">RELATIONAL STORE</text>
+          </g>
+
+          <text x="450" y="50" fill="#e7dcce" font-family="'Cinzel', serif" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="2">SYSTEM ARCHITECTURE &bull; FULL-STACK PIPELINE</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTENT SECTIONS -->
+    <div class="detail-split-grid">
+
+      <!-- Left Column: Narrative & Technical Details -->
+      <div class="detail-main-col">
+
+        <h2>1. PROJECT OVERVIEW</h2>
+        <p class="detail-paragraph">
+          The Certificate Tracker Application is an enterprise-scale credential management platform engineered to solve verification inefficiencies in academic institutions. Designed to manage over 1,000 student records, the system enables students to submit certifications, track review progression in real time, and allows administrative staff to authenticate academic achievements with auditability.
+        </p>
+
+        <h2>2. PROBLEM STATEMENT</h2>
+        <p class="detail-paragraph">
+          Higher education departments routinely handle thousands of extracurricular, technical, and academic certificates. Traditional manual verification via spreadsheets and physical paperwork suffers from severe bottlenecks: slow turnaround times, vulnerable audit trails, inability to detect duplicate or fraudulent claims, and lack of role-based data segmentation between students, faculty reviewers, and department administrators.
+        </p>
+
+        <h2>3. PROJECT OBJECTIVES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Stateless Secure Authentication</strong>
+              <span>Implement JSON Web Token (JWT) stateless session handling to secure API endpoints without server memory overhead.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Multi-Tiered Role-Based Access Control</strong>
+              <span>Segment application privileges strictly between Students (submit, view status), Faculty (review, verify), and Administrators (system-wide oversight, analytics).</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Scalable Relational Architecture</strong>
+              <span>Structure a normalized MySQL database schema with indexed queries to maintain sub-second response times across 1,000+ student datasets.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>4. KEY FEATURES</h2>
+        <ul class="feature-check-list">
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Role-Based Access Control (RBAC)</strong>
+              <span>Fine-grained endpoint protection ensuring students only view their respective submissions while administrators access comprehensive approval pipelines.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Automated Certificate Lifecycle Tracking</strong>
+              <span>Visual progress stages (Submitted &rarr; Under Review &rarr; Verified / Rejected) with contextual feedback for resubmissions.</span>
+            </div>
+          </li>
+          <li class="feature-check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div>
+            <div class="check-text">
+              <strong>Fast Search &amp; Multi-Parameter Filtering</strong>
+              <span>Allows administrators to filter records by student registration number, academic department, issuing organization, and verification status.</span>
+            </div>
+          </li>
+        </ul>
+
+        <h2>5. IMPLEMENTATION DETAILS</h2>
+        <p class="detail-paragraph">
+          The backend was built using <strong>Spring Boot</strong> following the layered enterprise architecture pattern (Controller &rarr; Service &rarr; Data Repository). <strong>Hibernate ORM</strong> maps Java entity objects directly to normalized MySQL relational tables. <strong>Spring Security</strong> filters intercept every incoming HTTP request, decoding the JWT bearer token, extracting claims, and enforcing role privileges before routing to business logic.
+        </p>
+        <p class="detail-paragraph">
+          The frontend was developed using <strong>React.js</strong>. Axios interceptors automatically attach authentication headers to API requests and intercept expired session responses to redirect users gracefully to login. Component modularity was maintained to separate student forms from administrative auditing tables.
+        </p>
+
+        <h2>6. RESULTS &amp; LEARNINGS</h2>
+        <p class="detail-paragraph">
+          The project successfully demonstrated the end-to-end development of an enterprise full-stack application capable of managing over 1,000 records. Key learnings included mastering Spring Security JWT filter configurations, resolving CORS issues between React and Spring Boot, understanding relational entity relationships (One-to-Many, Many-to-One), and structuring production-grade REST APIs.
+        </p>
+      </div>
+
+      <!-- Right Column: Sidebar Specs & Actions -->
+      <aside class="detail-side-col">
+        <div class="detail-side-card">
+          <h3>TECHNOLOGY STACK</h3>
+          <div class="card-tech-wrap" style="margin-top: 1rem;">
+            <span class="tech-chip">React.js</span>
+            <span class="tech-chip">Spring Boot 3.0</span>
+            <span class="tech-chip">Hibernate ORM</span>
+            <span class="tech-chip">MySQL 8.0</span>
+            <span class="tech-chip">Spring Security</span>
+            <span class="tech-chip">JWT Authentication</span>
+            <span class="tech-chip">RESTful APIs</span>
+            <span class="tech-chip">Axios Interceptors</span>
+            <span class="tech-chip">CSS Modules</span>
+          </div>
+
+          <h3 style="margin-top: 2rem;">REPOSITORY ACCESS</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.2rem;">
+            The complete source code including frontend components and Spring Boot services is accessible on GitHub:
+          </p>
+
+          <div class="detail-action-buttons">
+            <a href="https://github.com/Omprakash30760/FSAD-TEAM-25-CertiTracker-App-Frontend" target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              <span>VIEW GITHUB REPO</span>
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; fill: none;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="../projects.html#full-stack" class="btn-secondary-action">
+              <span>&larr; BACK TO ALL PROJECTS</span>
+            </a>
+            <a href="../index.html" class="btn-secondary-action" style="border-color: var(--border-gold-light);">
+              <span>&larr; MAIN PORTFOLIO</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>OM PRAKASH JENA</h4>
+          <p>Software Developer | AI &amp; Data Science &bull; KL University</p>
+        </div>
+        <ul class="footer-nav">
+          <li><a href="../projects.html">All Projects</a></li>
+          <li><a href="../index.html">Main Portfolio</a></li>
+          <li><a href="https://github.com/Omprakash30760" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/om-prakash-jena-443b74317/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="#top" style="color: var(--text-gold);">Back To Top &uarr;</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Om Prakash Jena. All Rights Reserved.</span>
+        <span>Certificate Tracker Application &bull; Full Stack Development</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
